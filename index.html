@@ -5,74 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Dog Photo App</title>
-</head>
-<body>
-    <!--CHILD ELEMENT OF THE HTML ELEMENT-->
-    <h1>DOG PHOTO APP</h1>
-    <main>
-<!-------------------1st Section------------------>
-        <section>
-            <h2>Dog Photos</h2>
-            <!--TODO: Add link to dog photos-->
-            <!--Step 6 is making indentation with <p></p> element-->
-            <p>Be a dog parent.Click here to view <a href="https://paws.org.ph/" target="_blank"></a>dog photos</a></p>
-            <a href="https://paws.org.ph/"></a><img src="images/golden-retriever-puppy.jpg" alt="This is a photo of a golden retriver golden-retriever-puppy" width="400px"
-            height="400px"></a>
-        </section>
-<!----------------2nd Section--------------------->        
-        <section>
-            <h2>Dog Lists</h2>
-            <h3>Things dogs love:</h3>
-            <ul>
-                <li>Seeing their human</li>
-                <li>Dog treats</li>
-                <li>Dog toys</li>
-            </ul>
-            <figure>
-                <img src="images/Labrador-and-Pork-long.jpg" alt="A picture of a dog with pork meat." width="400px"
-          height="400px">
-          <figcaption>My dogs <em>love</em> pork meat</figcaption>
-        </figure>
-        <h3>Three things dogs hate:</h3>
-        <ol>
-            <li>Cats</li>
-            <li>Taking bath</li>
-            <li>Being ignored</li>
-        </ol>
+    
+    <style>
+        body 
+        {
+            text-align: center;
+        }
 
-        <figure>
-            <img
-          src="https://www.pixel-creation.com/wp-content/uploads/puppy-wallpaper-and-background-image-1680x1050-id467417-800x800.jpg"
-          alt="A cute dog picture" widht="400px" height="400px">
-          <figcaption>Dogs <strong>hates</strong> cats</figcaption>
-        </figure>
+        ul, ol 
+        {
+            display:inline-block
+        }
         
-        </section>
-<!----------------3rd Section--------------------->           
-        <section>
-            <h2>DOG FORM</h2>
-            <form action="#">
-                <input type="text" name="cutedogsurl" placeholder="cute dogs url"
-                required>
-                <fieldset>
-                    <legend>Is your dog an indoor or outdoor dog?</legend>
-                    <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked>Indoor</label>
-                    <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
-                </fieldset>
+        img 
+        { 
+            width: 400px;
+            height: 400px;
+            
+        }
+    </style>
 
-                <fieldset>
-                    <legend>What is your dogs personality?</legend>
-                    <input type="checkbox" id="loving" name="personality" value="loving" checked> <label for="loving"> Loving</label>
-                    <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
-                    <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
-                </fieldset>
+</head>
+    <body>
+        
+        <!--CHILD ELEMENT OF THE HTML ELEMENT-->
+        <h1>DOG PHOTO APP</h1>
+        <main>
+    <!-------------------1st Section------------------>
+            <section class="dog-photos">
+                <h2>Dog Photos</h2>
+                <!--TODO: Add link to dog photos-->
+                <!--Step 6 is making indentation with <p></p> element-->
+                <p>Be a dog parent.Click here to view <a href="https://paws.org.ph/" target="_blank"></a>dog photos</a></p>
+                <a href="https://paws.org.ph/"></a><img src="images/golden-retriever-puppy.jpg" alt="This is a photo of a golden retriver golden-retriever-puppy"></a>
+            </section>
+    <!----------------2nd Section--------------------->        
+            <section class="dog-lists">
+                <h2>Dog Lists</h2>
+                <h3>Things dogs love:</h3>
+                <ul>
+                    <li>Seeing their human</li>
+                    <li>Dog treats</li>
+                    <li>Dog toys</li>
+                </ul>
+                <figure>
+                    <img src="images/Labrador-and-Pork-long.jpg" alt="A picture of a dog with pork meat.">
+            <figcaption>My dogs <em>love</em> pork meat</figcaption>
+            </figure>
+            <h3>Three things dogs hate:</h3>
+            <ol>
+                <li>Cats</li>
+                <li>Taking bath</li>
+                <li>Being ignored</li>
+            </ol>
 
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
-    </footer>
-</body>
+            <figure>
+                <img
+            src="https://www.pixel-creation.com/wp-content/uploads/puppy-wallpaper-and-background-image-1680x1050-id467417-800x800.jpg"
+            alt="A cute dog picture">
+            <figcaption>Dogs <strong>hates</strong> cats</figcaption>
+            </figure>
+            
+            </section>
+    <!----------------3rd Section--------------------->           
+            <section class="dog-form">
+                <h2>DOG FORM</h2>
+                <form action="https://jenbaldonado.github.io/">
+                    <input type="text" name="cutedogsurl" placeholder="cute dogs url"
+                    required>
+                    <fieldset>
+                        <legend>Is your dog an indoor or outdoor dog?</legend>
+                        <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked>Indoor</label>
+                        <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>What is your dogs personality?</legend>
+                        <input type="checkbox" id="loving" name="personality" value="loving" checked> <label for="loving"> Loving</label>
+                        <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+                        <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+                    </fieldset>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+        </footer>
+    </body>
 </html>
